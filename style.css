@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+.ralewayBold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.ralewayBold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.ralewayLigth{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+/*Começo do Header*/
+
+header{
+    width: 100%;
+    height: 85vh;
+    background-image: url(images/Banner\ background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10%;
+}
+
+header >div{
+    width: 50%;
+    color: aliceblue;
+    margin: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+header > div *{
+    margin: 0;
+}
+
+header h1:first-of-type{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header h1:last-of-type{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+}
+
+header h1{
+    font-size: 170px;
+    opacity: 0;
+}
+
+header h2{
+    font-family: "Crimson Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100    ;
+    font-style: normal;
+    width: 60%;
+
+    opacity: 0;
+}
+
+@media (max-width: 900px) {
+    header > div {
+        width: 80%;
+    }
+    header h1{
+        font-size: 100px;
+    }
+
+    header h2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    header h1{
+        font-size: 18vw;
+        opacity: 0;
+    }
+
+    header h2{
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@keyframes aparecer {
+
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+    
+}
+
+.conteudo h1:first-of-type{
+    animation: aparecer 1s forwards;
+
+    
+}
+
+.conteudo h1:last-of-type{
+    animation: aparecer 1s forwards;
+    animation-delay: 0.5s;
+
+    
+}
+
+.conteudo h2{
+    animation: aparecer 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.conteudo h2:last-of-type{
+    animation: aparecer 0.5s forwards;
+    animation-delay: 2s;
+}
