@@ -39,10 +39,10 @@ body {
 
 
 
-.ralewayBold {
+.ralewayNormal {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: bolder;
     font-style: normal;
 }
 .ralewayBold {
@@ -64,8 +64,8 @@ body {
 /*Começo do Header*/
 
 header{
-    width: 100%;
-    height: 85vh;
+    max-width: 100vw;
+    height: 90vh;
     background-image: url(images/Banner\ background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -181,4 +181,148 @@ header h2{
 .conteudo h2:last-of-type{
     animation: aparecer 0.5s forwards;
     animation-delay: 2s;
+}
+
+/*Sobre nós*/
+
+.sobre{
+    padding-top: 100px;
+    width: 100%;
+    background-color: #161414;
+    color: #FFF;
+    height: 90vh;
+
+}
+
+.sobre > h2{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+    font-family: "Crimson Text", serif;
+    font-weight: lighter;
+    font-style: normal;
+    opacity: 40%;
+}
+
+.text{
+    width: 50%;
+    padding-left: 10%;
+
+    font-size: 2.5vw;
+
+    align-self: center;
+}
+
+.text h1{
+      font-weight:600;
+}
+
+
+.content{
+    display: flex;
+
+}
+
+.pc{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.pc img{
+    width: 35vw;
+    height: 35vw;
+
+    animation: infinite 4s rebolar;
+}
+.text a{
+    text-decoration: none;
+    outline: 0;
+    width: 60%;
+    justify-content: center;
+
+}
+.text button{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #FFF;
+    font-size: 2vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.text button:hover{
+    color: #161414;
+    background-color: #FFF;
+}
+
+
+@media (max-width:1000px) {
+    .content{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+.text{
+    padding: 0;
+    font-size: 4vw;
+}
+
+.sobre {
+    height: auto;
+}
+.text{
+    width: 100vw;
+    
+}
+
+.content button{
+    font-size: 3vw;
+    height: 6vw;
+}
+
+.text h1{
+    padding: 0 10vw;
+    text-align: center  ;
+}
+
+
+    .pc{
+        margin: 0 auto;
+        width: 100vw;
+        padding-top: 50px;
+    }
+    .pc img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .content a{
+        width: 100%;
+    }
+
+
+}
+
+@keyframes rebolar {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+
+    0%{
+        transform: translateY(0px);
+    }
 }
