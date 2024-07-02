@@ -408,3 +408,65 @@ header h2{
    opacity: 0;
    transform: translateX(-100px); 
  }
+
+
+ .depoimentos{
+    background-color: #161414;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+ }
+.depoimentos > h2{
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: lighter;
+    opacity: 40%;
+}
+ .dep-box{
+    color: #FFF;
+    width: 50vw;
+    margin: 10vh auto;
+
+ }
+
+ .dep-box *{
+    margin: 0;
+ }
+
+ .dep-box h1{
+    font-size: 33px;
+    font-weight: normal;
+    opacity: 80%;
+ }
+
+ .dep-box h3{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    opacity: 40%;
+
+ }
+
+ .dep-box p{
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 40px auto;
+
+}
+
+.dep-box p::before{
+    content: '"';
+}
+
+.dep-box p::after{
+    content: '"';
+}
+@media (max-width:1000px) {
+    
+
+    .dep-box{
+        width: 80vw;
+    }
+}
