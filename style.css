@@ -470,3 +470,91 @@ header h2{
         width: 80vw;
     }
 }
+
+
+.especialidades{
+    width:100%;
+    background-image: url(images/Mulher\ imagem.png);
+
+    color: #FFF;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 0;
+}
+
+.especialidades *{
+    margin: 0;
+    text-align: center;
+    
+}
+.especialidades h2{
+    font-size: 25px;
+    font-weight: lighter;
+    color: #FFF;
+}
+
+.esp-box{
+    border: solid #FFF 2px;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 50vw;
+    transition: 0.3s;
+
+    cursor: pointer;
+    margin: 10vh auto;
+}
+
+
+.esp-box:hover{
+    background-color: #FFF;
+    color: #161414;
+    width: 60vw;
+}
+
+.esp-cta{
+    text-decoration: none;
+}
+.esp-cta button{
+    width: 20vw;
+
+    background-color: #161414cb;
+    border: #FFF solid 2px ;
+    border-radius: 20px;
+    color: #adadad;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.3s;
+
+}
+
+.esp-cta button:hover{
+    color: #161414;
+    background-color: #ffffffa9;
+    border: #FFF;
+    width: 30vw;
+}
+
+@media (max-width:1000px) {
+    
+    .esp-cta button{
+        width: 80vw;
+        font-size: 30px;
+    }
+
+    .esp-box{
+        width: 80vw;
+    }
+
+    .esp-box h1{
+                font-weight: lighter;
+
+    }
+}
