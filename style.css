@@ -537,8 +537,8 @@ header h2{
 
 .esp-cta button:hover{
     color: #161414;
-    background-color: #ffffffa9;
-    border: #FFF;
+    background-color: #ffffff;
+    border-color: #FFF;
     width: 30vw;
 }
 
@@ -556,5 +556,115 @@ header h2{
     .esp-box h1{
                 font-weight: lighter;
 
+    }
+}
+
+.solucoes{
+    background-color:#161414;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+
+}
+
+.solucoes > h2{
+    font-size: 25px;
+
+    font-weight: lighter;
+    opacity: 40%;
+}
+
+.sol-box{
+    width: 400px;
+    border: solid rgb(152, 152, 152) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    
+}
+
+.sol-box h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.sol-box img{
+    width: 30%;
+    aspect-ratio: 1/1;
+}
+
+.sol-box p{
+    font-size: 18px;
+    font-weight: lighter;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.solucoes >div{
+    width: 80%;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    margin: 10vh auto;
+
+}
+
+.solucoes button{
+    width: 20vw;
+    color: #000;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #FFF;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.solucoes button:hover{
+    color: #FFF;
+    background-color: transparent;
+}
+
+
+
+@media (max-width:1000px) {
+    .solucoes > div{
+        flex-wrap: wrap;
+        width: 98%;
+    }
+    .sol-box{
+        width: 300px;
+    }
+
+}
+
+@media (max-width:700px) {
+  
+    .sol-box{
+        width: 60%;
+    }
+}
+
+@media (max-width:1000px) {
+    .solucoes button{
+        width:40vw;
+        font-size: 30px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .solucoes button{
+        width: 80vw;
     }
 }
