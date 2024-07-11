@@ -602,7 +602,16 @@ header h2 {
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
+    transition: 0.3s;
+    opacity: 0;
 
+}
+
+.sol-box:hover{
+
+    
+    filter: invert(0.9);
+    background-color: #000;
 }
 
 .sol-box h2 {
