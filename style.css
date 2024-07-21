@@ -188,12 +188,21 @@ header h2 {
 /*Sobre nós*/
 
 .sobre {
-    padding-top: 100px;
+    padding: 100px 0;
     width: 100%;
     background-color: #161414;
     color: #FFF;
-    height: 90vh;
 
+}
+@media (max-width:1000px) {
+    
+    .text a  button{
+        font-size: 30px;
+        height: auto;
+        width: auto;
+        padding: 10px 20px;
+        margin: 40px auto;
+    }
 }
 
 .sobre>h2 {
@@ -400,8 +409,14 @@ header h2 {
         font-size: 20px
     }
 
+    .faixa a button:hover{
+        width: 80vw;
+    }
+
     .faixa h1 {
-        font-size: 25px;
+        font-size: 20px;
+        padding: 0 10px;
+
     }
 }
 
@@ -489,13 +504,13 @@ header h2 {
 .especialidades {
     width: 100%;
     background-image: url(images/Mulher\ imagem.png);
-    height: 70vh;
     color: #FFF;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5vh 0;
 }
+
 
 .especialidades * {
     margin: 0;
@@ -579,6 +594,10 @@ header h2 {
     .esp-cta button {
         width: 80vw;
         font-size: 30px;
+    }
+
+    .esp-cta button:hover{
+        width: 80vw;
     }
 
     .esp-box {
