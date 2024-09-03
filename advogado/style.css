@@ -1,0 +1,1025 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+.ralewayNormal {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.ralewayBold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.ralewayLigth {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+/*Começo do Header*/
+
+header {
+    max-width: 100vw;
+    height: 90vh;
+    background-image: url(images/Banner\ background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10%;
+}
+
+header>div {
+    width: 50%;
+    color: aliceblue;
+    margin: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+header>div * {
+    margin: 0;
+}
+
+header h1:first-of-type {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header h1:last-of-type {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header h1 {
+    font-size: 170px;
+    opacity: 0;
+}
+
+header h2 {
+    font-family: "Crimson Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    width: 60%;
+
+    opacity: 0;
+}
+
+@media (max-width: 900px) {
+    header>div {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 100px;
+    }
+
+    header h2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 18vw;
+        opacity: 0;
+    }
+
+    header h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+
+}
+
+.conteudo h1:first-of-type {
+    animation: aparecer 1s forwards;
+
+
+}
+
+.conteudo h1:last-of-type {
+    animation: aparecer 1s forwards;
+    animation-delay: 0.5s;
+
+
+}
+
+.conteudo h2 {
+    animation: aparecer 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.conteudo h2:last-of-type {
+    animation: aparecer 0.5s forwards;
+    animation-delay: 2s;
+}
+
+/*Sobre nós*/
+
+.sobre {
+    padding: 100px 0;
+    width: 100%;
+    background-color: #161414;
+    color: #FFF;
+
+}
+
+@media (max-width:1000px) {
+
+    .text a button {
+        font-size: 30px;
+        height: auto;
+        width: auto;
+        padding: 10px 20px;
+        margin: 40px auto;
+    }
+}
+
+.sobre>h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+    font-family: "Crimson Text", serif;
+    font-weight: lighter;
+    font-style: normal;
+    opacity: 40%;
+}
+
+.text {
+    width: 50%;
+    padding-left: 10%;
+
+    font-size: 2.5vw;
+
+    align-self: center;
+}
+
+.text h1 {
+    font-weight: 600;
+}
+
+
+.content {
+    display: flex;
+
+}
+
+.pc {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc img {
+    width: 35vw;
+    height: 35vw;
+
+    animation: infinite 4s rebolar;
+}
+
+.text a {
+    text-decoration: none;
+    outline: 0;
+    width: 60%;
+    justify-content: center;
+
+}
+
+.text   button {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.text a button{
+    font-size: 40px;
+}
+
+@media (max-width:600px) {
+    
+    .text a button{
+        font-size: 20px;
+        width: 50%;
+    }
+}
+
+@media (min-width:900px) {
+    .text button:hover {
+        color: #161414;
+        background-color: #FFF;
+        width: 60%;
+    } 
+}
+
+
+@media (max-width:1000px) {
+    .content {
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .text {
+        padding: 0;
+        font-size: 4vw;
+    }
+
+    .sobre {
+        height: auto;
+    }
+
+    .text {
+        width: 100vw;
+
+    }
+
+    .content button {
+        font-size: 3vw;
+        height: 6vw;
+    }
+
+    .text h1 {
+        padding: 0 10vw;
+        text-align: center;
+    }
+
+
+    .pc {
+        margin: 0 auto;
+        width: 100vw;
+        padding-top: 50px;
+    }
+
+    .pc img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .content a {
+        width: 100%;
+    }
+
+
+}
+
+@keyframes rebolar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    0% {
+        transform: translateY(0px);
+    }
+}
+
+.faixa {
+    width: 100%;
+    background-color: #FFF;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 10vh;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.faixa h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    margin: 0;
+
+}
+
+.faixa a button {
+    background-color: #161414;
+    color: #FFF;
+    width: 20vw;
+    height: 50px;
+    border: #161414 2px solid;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.faixa a button:hover {
+    background-color: transparent;
+    color: #161414;
+    width: 25vw;
+
+    border-radius: 20px;
+}
+
+@media (max-width:1000px) {
+    .faixa a button {
+        width: 50vw;
+    }
+}
+
+@media (max-width:500px) {
+    .faixa a button {
+        width: 80vw;
+        font-size: 20px
+    }
+
+    .faixa a button:hover {
+        width: 80vw;
+    }
+
+    .faixa h1 {
+        font-size: 20px;
+        padding: 0 10px;
+
+    }
+}
+
+
+.titulo-1 {
+    transition: 2s;
+}
+
+.ver {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.desver {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+
+.depoimentos {
+    background-color: #161414;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+}
+
+.depoimentos>h2 {
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: lighter;
+    opacity: 40%;
+}
+
+.dep-box {
+    color: #FFF;
+    width: 50vw;
+    margin: 10vh auto;
+
+}
+
+.dep-box * {
+    margin: 0;
+}
+
+.dep-box h1 {
+    font-size: 33px;
+    font-weight: normal;
+    opacity: 80%;
+}
+
+.dep-box h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    opacity: 40%;
+
+}
+
+.dep-box p {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 40px auto;
+
+}
+
+.dep-box p::before {
+    content: '"';
+}
+
+.dep-box p::after {
+    content: '"';
+}
+
+@media (max-width:1000px) {
+
+
+    .dep-box {
+        width: 80vw;
+    }
+}
+
+
+.especialidades {
+    width: 100%;
+    background-image: url(images/Mulher\ imagem.png);
+    color: #FFF;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 0;
+}
+
+
+.especialidades * {
+    margin: 0;
+    text-align: center;
+
+}
+
+.especialidades h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #FFF;
+}
+
+.esp-box {
+    border: solid #FFF 2px;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 50vw;
+    transition: 0.3s;
+
+    cursor: pointer;
+    margin: 10vh auto;
+}
+
+.esp-box p {
+
+    height: 0;
+    opacity: 0;
+    color: #000;
+    transition: .3s;
+}
+
+.esp-box:hover p {
+    height: auto;
+    opacity: 1;
+    transition: 0;
+    margin-top: 20px;
+
+}
+
+
+.esp-box:hover {
+    background-color: #FFF;
+    color: #161414;
+    width: 60vw;
+}
+
+.esp-cta {
+    text-decoration: none;
+}
+
+.esp-cta button {
+    width: 20vw;
+
+    background-color: #161414cb;
+    border: #FFF solid 2px;
+    border-radius: 20px;
+    color: #adadad;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.esp-cta button:hover {
+    color: #161414;
+    background-color: #ffffff;
+    border-color: #FFF;
+    width: 30vw;
+}
+
+@media (max-width:1000px) {
+
+    .esp-cta button {
+        width: 80vw;
+        font-size: 30px;
+    }
+
+    .esp-cta button:hover {
+        width: 80vw;
+    }
+
+    .esp-box {
+        width: 80vw;
+    }
+
+    .esp-box h1 {
+        font-weight: lighter;
+
+    }
+}
+
+.solucoes {
+    background-color: #161414;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+
+}
+
+.solucoes>h2 {
+    font-size: 25px;
+
+    font-weight: lighter;
+    opacity: 40%;
+}
+
+.sol-box {
+    width: 400px;
+    border: solid rgb(152, 152, 152) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    transition: 0.3s;
+    opacity: 0;
+    gap: 30px;
+
+}
+
+.sol-box:hover {
+
+
+    filter: invert(0.9);
+    background-color: #000;
+}
+
+.sol-box h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.sol-box img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    margin-top: 20px;
+}
+
+.sol-box p {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.solucoes>div {
+    width: 80%;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    margin: 10vh auto;
+
+}
+
+.solucoes button {
+    width: 20vw;
+    color: #000;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #FFF;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.solucoes button:hover {
+    color: #FFF;
+    background-color: transparent;
+}
+
+
+
+@media (max-width:1000px) {
+    .solucoes>div {
+        flex-wrap: wrap;
+        width: 98%;
+    }
+
+    .sol-box {
+        width: 300px;
+    }
+
+
+
+}
+
+@media (max-width:700px) {
+
+    .sol-box {
+        width: 60%;
+    }
+
+    .sol-box:nth-of-type(2) {
+        margin: 100px auto;
+    }
+}
+
+@media (max-width:1000px) {
+    .solucoes button {
+        width: 40vw;
+        font-size: 30px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .solucoes button {
+        width: 80vw;
+    }
+}
+
+
+footer {
+    padding-top: 100px;
+    background-color: #161414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.copi {
+    width: 100%;
+    background-color: #505050;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.copi a {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+.copi a:hover {
+    text-decoration: underline;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFF;
+}
+
+.logo img {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 0;
+    width: 95%;
+}
+
+footer li a {
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 3s;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.cta-prop {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 100px 0;
+
+}
+
+.cta-prop button {
+    background-color: #FFF;
+    border: #FFF 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cta-prop button:hover {
+    background-color: transparent;
+    border: #FFF solid 2px;
+    scale: 1.1;
+
+}
+
+.cta-prop button:hover a {
+    color: #FFF;
+
+}
+
+.cta-prop a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+
+/*Seção depoimentos foto de perfil*/
+
+.dep-box>div {
+    width: 150px;
+    height: 150px;
+    background-image: url(images/logo\ mateus.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-radius: 100%;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.projetos {
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    padding: 100px 0;
+
+}
+
+.projetos h1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    opacity: 100%;
+    color: #000;
+    margin-bottom: 80px;
+
+}
+
+.pro-box {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-image: url(images/box\ portfolio.png);
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pro-box:nth-of-type(2){
+    background-image: url(images/Advogado.png);
+}
+
+
+.pro-box button {
+    cursor: pointer;
+
+    color: #000;
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    
+}
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+
+
+}
+
+
+
+.projetos > div{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 80%;
+    gap: 70px;
+    flex-wrap: wrap;
+
+}
+
+@media (min-width:901px) {
+    .pro-box:hover .overlay{
+
+        opacity: 1;
+        background-color: #00000090;
+    }
+}
+
+@media (max-width:900px) {
+    .pro-box{
+        width: 40%;
+    }
+
+    .overlay{
+        background-color: transparent;
+        opacity: 1;
+        align-items: end;
+       
+    }
+
+    .overlay button{
+        margin-bottom: 40px;
+    }
+
+    
+
+
+}
+
+@media (max-width:750px) {
+    .pro-box{
+        width: 95%;
+    }
+
+    .projetos > div{
+        width: 93%;
+    }
+
+    .pro-box button{
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .pro-box a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
