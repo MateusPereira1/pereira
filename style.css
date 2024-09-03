@@ -928,6 +928,10 @@ html {
 
 }
 
+.pro-box:nth-of-type(2){
+    background-image: url(images/Advogado.png);
+}
+
 
 .pro-box button {
     cursor: pointer;
