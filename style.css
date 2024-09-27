@@ -919,28 +919,35 @@ html {
 .pro-box {
     width: 20%;
     aspect-ratio: 1/1;
-    background-image: url(images/box\ portfolio.png);
     background-size: contain;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
+.pro-box:nth-of-type(1){
+    background-image: url(images/box\ portfolio.png);
+}
+
+
 .pro-box:nth-of-type(2){
     background-image: url(images/Advogado.png);
+}
+
+.pro-box:nth-of-type(3){
+    background-image: url(images/Perfect.png);
 }
 
 
 .pro-box button {
     cursor: pointer;
 
-    color: #000;
-    background-color: #e1e1e1;
+    color: #FFF;
+    background-color: #161414;
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 23px;
     padding: 10px 20px;
     
 }
